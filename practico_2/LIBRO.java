@@ -2,8 +2,8 @@ package practico_2;
 
 public class LIBRO extends PUBLICACION{
 
-	String genero, isbn;
-
+	String genero;
+	int isbn;
 	public String getGenero() {
 		return genero;
 	}
@@ -12,15 +12,15 @@ public class LIBRO extends PUBLICACION{
 		this.genero = genero;
 	}
 
-	public String getIsbn() {
+	public int getIsbn() {
 		return isbn;
 	}
 
-	public void setIsbn(String isbn) {
+	public void setIsbn(int isbn) {
 		this.isbn = isbn;
 	}
 
-	public LIBRO(int anioPublicacion, String titulo, String autor, String editorial, String genero, String isbn) {
+	public LIBRO(int anioPublicacion, String titulo, String autor, String editorial, String genero, int isbn) {
 		super(anioPublicacion, titulo, autor, editorial);
 		this.genero = genero;
 		this.isbn = isbn;
